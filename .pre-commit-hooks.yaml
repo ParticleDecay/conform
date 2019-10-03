@@ -1,0 +1,8 @@
+---
+- id: conform
+  name: Conform
+  description: Run 'conform enforce' for policy enforcement
+  entry: conform enforce --commit-msg-file .git/COMMIT_EDITMSG
+  language: golang
+  pass_filenames: false
+  stages: [commit-msg]
